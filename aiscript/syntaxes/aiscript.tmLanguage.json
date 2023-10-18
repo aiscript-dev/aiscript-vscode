@@ -1,0 +1,243 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "AiScript",
+	"patterns": [
+		{
+			"include": "#syntax"
+		}
+	],
+	"repository": {
+		"syntax": {
+			"patterns": [
+				{
+					"include": "#comments"
+				},
+				{
+					"include": "#functions"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#declarations"
+				},
+				{
+					"include": "#operators"
+				},
+				{
+					"include": "#template-strings"
+				},
+				{
+					"include": "#numbers"
+				},
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#presets"
+				},
+				{
+					"include": "#variables"
+				}
+			]
+		},
+		"declarations": {
+			"patterns": [
+				{
+					"name": "storage.type.aiscript",
+					"match": "@|var|let|true|false|null|exists"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.aiscript",
+					"match": "(return|<:|if|elif|else|for|eval|loop)(?=[\\s(])"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.aiscript",
+					"match": "(\\+|\\-|\\*|\\*\\*|\\/|%|<<|>>|&&|\\|\\||\\^|~|<|>|<=|=>|!=|=|:)"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "meta.classfunction.aiscript",
+					"begin": "([A-Z][A-Za-z0-9:]*(?=:):)*((?<=:)[a-zA-Z0-9]+(?=\\())\\(",
+					"beginCaptures": {
+						"1": {
+							"name": "entity.name.class.aiscript",
+							"patterns": [
+								{
+									"match": ":",
+									"name": "keyword.operator.aiscript"
+								}
+							]
+						},
+						"2": {
+							"name": "entity.name.function.aiscript"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#syntax"
+						}
+					],
+					"end": "\\)"
+				},
+				{
+					"name": "meta.function.aiscript",
+					"begin": "[:.]?([a-zA-Z][a-zA-Z0-9]*)\\(",
+					"beginCaptures": {
+						"1": {
+							"name": "entity.name.function.aiscript"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#syntax"
+						}
+					],
+					"end": "\\)"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.single.aiscript",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.aiscript",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.double.aiscript",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.aiscript",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
+		},
+		"template-strings": {
+			"patterns": [
+				{
+					"name": "meta.template-string.aiscript",
+					"begin": "`",
+					"beginCaptures": {
+						"0": {
+							"name": "string.other.aiscript"
+						}
+					},
+					"end": "`(?![\\s]*`)",
+					"endCaptures": {
+						"0": {
+							"name": "string.other.aiscript"
+						}
+					},
+					"patterns": [
+						{
+							"name": "meta.string-template.aiscript",
+							"begin": "{",
+							"beginCaptures": {
+								"0": {
+									"name": "entity.name.tag.aiscripr"
+								}
+							},
+							"end": "}",
+							"endCaptures": {
+								"0": {
+									"name": "entity.name.tag.aiscripr"
+								}
+							},
+							"patterns": [
+								{
+									"include": "#syntax"
+								}
+							]
+						},
+						{
+							"name": "constant.character.escape.aiscript",
+							"match": "\\\\."
+						},
+						{
+							"name": "string.other.aiscript",
+							"match": "[^`]?"
+						}
+					]
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.aiscript",
+					"match": "-?[0-9]+"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.other.readwrite.aiscript",
+					"match": "[a-zA-Z][a-zA-Z0-9_]*"
+				}
+			]
+		},
+		"presets": {
+			"patterns": [
+				{
+					"name": "variable.other.constant.aiscript",
+					"match": "USER_ID|USER_NAME|CUSTOM_EMOJIS|LOCALE|SERVER_URL|THIS_ID|THIS_URL"
+				},
+				{
+					"name": "meta.classconstant.aiscript",
+					"match": "([A-Z][A-Za-z0-9:]*(?=:):)*((?<=:)[a-zA-Z0-9]+)",
+					"captures": {
+						"1": {
+							"name": "entity.name.class.aiscript",
+							"patterns": [
+								{
+									"match": ":",
+									"name": "keyword.operator.aiscript"
+								}
+							]
+						},
+						"2": {
+							"name": "variable.other.constant.aiscript"
+						}
+					}
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.aiscript",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.block.aiscript",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		}
+	},
+	"scopeName": "source.aiscript"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "aiscript",
+  "displayName": "AiScript Highlighting",
+  "description": "AiScript support extension, crafted by the developers of Misskey",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "aiscript",
+      "aliases": ["AiScript", "aiscript"],
+      "extensions": [".is"],
+      "configuration": "./aiscript/language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "aiscript",
+      "scopeName": "source.aiscript",
+      "path": "./aiscript/syntaxes/aiscript.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "aiscript",
+      "scopeName": "source.is",
+      "path": "./aiscript/snippets/aiscript.snippets.json"
+    }]
+  }
+}
