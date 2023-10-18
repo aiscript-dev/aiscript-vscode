@@ -1,5 +1,6 @@
 {
   "name": "aiscript",
+  "publisher": "misskey-dev",
   "displayName": "AiScript Highlighting",
   "description": "AiScript support extension, crafted by the developers of Misskey",
   "version": "0.0.1",
