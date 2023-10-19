@@ -156,13 +156,13 @@
 							"begin": "{",
 							"beginCaptures": {
 								"0": {
-									"name": "entity.name.tag.aiscripr"
+									"name": "entity.name.tag.aiscript"
 								}
 							},
 							"end": "}",
 							"endCaptures": {
 								"0": {
-									"name": "entity.name.tag.aiscripr"
+									"name": "entity.name.tag.aiscript"
 								}
 							},
 							"patterns": [
