@@ -1,7 +1,12 @@
 {
   "name": "aiscript",
+  "publisher": "misskey-dev",
   "displayName": "AiScript Highlighting",
   "description": "AiScript support extension, crafted by the developers of Misskey",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/misskey-dev/aiscript-vscode"
+	},
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.83.0"
