@@ -8,7 +8,7 @@ AiScript Highlighting is an extension for Visual Studio Code that provides synta
 
 ## How to Install
 
-Head to the release page and download the latest version of the `.vsix` file.
+Head to the [releases page](https://github.com/misskey-dev/aiscript-vscode/releases) and download the latest version of the `.vsix` file.
 
 ## Requirements
 
