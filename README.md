@@ -1,14 +1,18 @@
-# AiScript Highlighting VSCode Extention
+# AiScript Highlighting VSCode Extention (Experimental)
 
-WIP
+![Screenshot](./readme-assets/screenshot.png)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+AiScript Highlighting is an extension for Visual Studio Code that provides syntax highlighting for AiScript. We are planning to support Language Server in the future.
+
+## How to Install
+
+Head to the release page and download the latest version of the `.vsix` file.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Works with Visual Studio Code v1.83.0 or later
 
 ## Release Notes
 
