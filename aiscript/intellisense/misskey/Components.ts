@@ -4,9 +4,11 @@ import { createCompletionItemKindMethod } from '../misc/createCompletionItemKind
 export default languages.registerCompletionItemProvider('aiscript', {
     provideCompletionItems(document, position) {
         const linePrefix = document.lineAt(position).text.slice(0, position.character);
-        if (!(/Ui:$/).test(linePrefix)) {
+        if (!(/Ui:(C:)?[^)\s]*$/).test(linePrefix)) {
             return undefined;
-        } else if (!(/Ui:C:$/).test(linePrefix)) {
+        }
+        
+        if ((/Ui:$/).test(linePrefix)) {
             const ComponentsRoot = new CompletionItem('C:');
             ComponentsRoot.kind = CompletionItemKind.Class;
             ComponentsRoot.command = { command: 'editor.action.triggerSuggest', title: 'Re-trigger completions...' };
