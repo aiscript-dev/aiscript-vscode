@@ -25,5 +25,10 @@ Please refer to CHANGELOG.md
 Run:
 
 ```bash
+$ pnpm i
+
 $ npx vsce package
+
+# (If command above didn't work, try below)
+$ npm install -g vsce
 ```
