@@ -4,7 +4,7 @@
 
 ## Features
 
-AiScript Highlighting is an extension for Visual Studio Code that provides syntax highlighting for AiScript. We are planning to support Language Server in the future.
+AiScript Highlighting is an extension for Visual Studio Code that provides syntax highlighting for AiScript.
 
 ## How to Install
 
