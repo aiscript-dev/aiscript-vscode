@@ -2,34 +2,49 @@
 	"name": "aiscript",
 	"publisher": "aiscript-dev",
 	"displayName": "AiScript Highlighting",
-	"description": "AiScript support extension, crafted by the developers of Misskey",
+	"description": "Add support for AiScript",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/aiscript-dev/aiscript-vscode"
 	},
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.83.0"
 	},
 	"categories": [
 		"Programming Languages"
 	],
+	"main": "./dist/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run build",
+		"build": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
 	"contributes": {
-		"languages": [{
-			"id": "aiscript",
-			"aliases": ["AiScript", "aiscript"],
-			"extensions": [".is"],
-			"configuration": "./aiscript/language-configuration.json"
-		}],
-		"grammars": [{
-			"language": "aiscript",
-			"scopeName": "source.aiscript",
-			"path": "./aiscript/syntaxes/aiscript.tmLanguage.json"
-		}],
-		"snippets": [{
-			"language": "aiscript",
-			"scopeName": "source.is",
-			"path": "./aiscript/snippets/aiscript.snippets.json"
-		}]
+		"languages": [
+			{
+				"id": "aiscript",
+				"aliases": [
+					"AiScript",
+					"aiscript"
+				],
+				"extensions": [
+					".is"
+				],
+				"configuration": "./aiscript/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "aiscript",
+				"scopeName": "source.aiscript",
+				"path": "./aiscript/syntaxes/aiscript.tmLanguage.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.7",
+		"@types/vscode": "^1.83.1",
+		"typescript": "^5.2.2"
 	}
 }
