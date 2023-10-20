@@ -1,4 +1,4 @@
-# AiScript Highlighting VSCode Extention (Experimental)
+# AiScript Highlighting VSCode Extension (Experimental)
 
 ![Screenshot](./readme-assets/screenshot.png)
 
