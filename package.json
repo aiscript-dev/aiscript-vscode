@@ -7,7 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/aiscript-dev/aiscript-vscode"
 	},
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.83.0"
 	},
@@ -39,13 +39,6 @@
 				"language": "aiscript",
 				"scopeName": "source.aiscript",
 				"path": "./aiscript/syntaxes/aiscript.tmLanguage.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "aiscript",
-				"scopeName": "source.is",
-				"path": "./aiscript/snippets/aiscript.snippets.json"
 			}
 		]
 	},
