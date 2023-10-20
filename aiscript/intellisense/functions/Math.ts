@@ -16,15 +16,15 @@ export default languages.registerCompletionItemProvider('aiscript', {
         }
 
         return [
-            new CompletionItem('Infinity', CompletionItemKind.Constant),
-            new CompletionItem('E', CompletionItemKind.Constant),
-            new CompletionItem('LN2', CompletionItemKind.Constant),
-            new CompletionItem('LN10', CompletionItemKind.Constant),
-            new CompletionItem('LOG2E', CompletionItemKind.Constant),
-            new CompletionItem('LOG10E', CompletionItemKind.Constant),
-            new CompletionItem('PI', CompletionItemKind.Constant),
-            new CompletionItem('SQRT1_2', CompletionItemKind.Constant),
-            new CompletionItem('SQRT2', CompletionItemKind.Constant),
+            new CompletionItem('Infinity', CompletionItemKind.Value),
+            new CompletionItem('E', CompletionItemKind.Value),
+            new CompletionItem('LN2', CompletionItemKind.Value),
+            new CompletionItem('LN10', CompletionItemKind.Value),
+            new CompletionItem('LOG2E', CompletionItemKind.Value),
+            new CompletionItem('LOG10E', CompletionItemKind.Value),
+            new CompletionItem('PI', CompletionItemKind.Value),
+            new CompletionItem('SQRT1_2', CompletionItemKind.Value),
+            new CompletionItem('SQRT2', CompletionItemKind.Value),
 
             createCompletionItemKindMethod('abs'),
             createCompletionItemKindMethod('sign'),

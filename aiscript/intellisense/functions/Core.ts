@@ -16,7 +16,7 @@ export default languages.registerCompletionItemProvider('aiscript', {
         }
 
         return [
-            new CompletionItem('v', CompletionItemKind.Constant),
+            new CompletionItem('v', CompletionItemKind.Value),
             
             createCompletionItemKindMethod('type'),
             createCompletionItemKindMethod('to_str'),
