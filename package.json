@@ -5,7 +5,7 @@
   "description": "AiScript support extension, crafted by the developers of Misskey",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/misskey-dev/aiscript-vscode"
+		"url": "https://github.com/aiscript-dev/aiscript-vscode"
 	},
   "version": "0.0.1",
   "engines": {
