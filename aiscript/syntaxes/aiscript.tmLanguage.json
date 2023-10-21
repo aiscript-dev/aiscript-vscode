@@ -45,7 +45,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.aiscript",
-					"match": "@|var|let|true|false|null|exists"
+					"match": "(@|var|let|true|false|null|exists)|(^#{3}(?=\\s*\\{))"
 				}
 			]
 		},
@@ -53,7 +53,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.aiscript",
-					"match": "(return|<:|if|elif|else|for|eval|loop)(?=[\\s(])"
+					"match": "(return|<:|if|elif|else|for|eval|loop|match)(?=[\\s(])"
 				}
 			]
 		},

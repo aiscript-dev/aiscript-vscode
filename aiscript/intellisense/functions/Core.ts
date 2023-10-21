@@ -17,7 +17,19 @@ export default languages.registerCompletionItemProvider('aiscript', {
 
         return [
             new CompletionItem('v', CompletionItemKind.Value),
-            
+    
+            createCompletionItemKindMethod('add'),
+            createCompletionItemKindMethod('sub'),
+            createCompletionItemKindMethod('mul'),
+            createCompletionItemKindMethod('pow'),
+            createCompletionItemKindMethod('div'),
+            createCompletionItemKindMethod('mod'),
+            createCompletionItemKindMethod('eq'),
+            createCompletionItemKindMethod('and'),
+            createCompletionItemKindMethod('or'),
+            createCompletionItemKindMethod('gt'),
+            createCompletionItemKindMethod('lt'),
+
             createCompletionItemKindMethod('type'),
             createCompletionItemKindMethod('to_str'),
             createCompletionItemKindMethod('sleep'),

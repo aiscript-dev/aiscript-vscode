@@ -15,6 +15,9 @@
 		"Programming Languages"
 	],
 	"main": "./dist/extension.js",
+	"activationEvents": [
+		"onLanguage:aiscript"
+	],
 	"scripts": {
 		"vscode:prepublish": "npm run build",
 		"build": "tsc -p ./",
