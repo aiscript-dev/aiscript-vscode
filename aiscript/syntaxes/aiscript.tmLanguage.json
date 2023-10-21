@@ -22,9 +22,6 @@
 					"include": "#declarations"
 				},
 				{
-					"include": "#operators"
-				},
-				{
 					"include": "#template-strings"
 				},
 				{
@@ -32,6 +29,9 @@
 				},
 				{
 					"include": "#keywords"
+				},
+				{
+					"include": "#operators"
 				},
 				{
 					"include": "#presets"
@@ -61,7 +61,11 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.aiscript",
-					"match": "(\\+|\\-|\\*|\\*\\*|\\/|%|<<|>>|&&|\\|\\||\\^|~|<|>|<=|=>|!=|=|:)"
+					"match": "(\\+|\\-|\\*|\\*\\*|\\/|%|<<|>>|&&|\\|\\||\\^|~|<|>|<=|=>|!=|=)"
+				},
+				{
+					"name": "punctuation.accessor.aiscript",
+					"match": "(:|\\.)"
 				}
 			]
 		},
@@ -72,11 +76,15 @@
 					"begin": "([A-Z][A-Za-z0-9_:]*(?=:):)*((?<=:)[a-zA-Z0-9_]+(?=\\())\\(",
 					"beginCaptures": {
 						"1": {
-							"name": "entity.name.class.aiscript",
+							"name": "meta.classnamechain.aiscript",
 							"patterns": [
 								{
 									"match": ":",
 									"name": "keyword.operator.aiscript"
+								},
+								{
+									"name": "entity.name.class.aiscript",
+									"match": "[^:]*"
 								}
 							]
 						},
@@ -210,12 +218,16 @@
 					"match": "([A-Z][A-Za-z0-9_:]*(?=:):)*((?<=:)[a-zA-Z0-9_]+)",
 					"captures": {
 						"1": {
-							"name": "entity.name.class.aiscript",
+							"name": "meta.classnamechain.aiscript",
 							"patterns": [
 								{
 									"match": ":",
-									"name": "keyword.operator.aiscript"
-								}
+									"name": "punctuation.accessor.aiscript"
+								},
+								{
+									"name": "entity.name.class.aiscript",
+									"match": "[^:]*"
+								}		
 							]
 						},
 						"2": {
