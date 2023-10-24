@@ -27,8 +27,8 @@ Run:
 ```bash
 $ pnpm i
 
-$ npx vsce package
+$ pnpm dlx vsce package
 
 # (If command above didn't work, try below)
-$ npm install -g vsce
+$ pnpm install -g vsce
 ```
