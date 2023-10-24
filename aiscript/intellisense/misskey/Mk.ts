@@ -23,6 +23,7 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('save'),
             createCompletionItemKindMethod('load'),
             createCompletionItemKindMethod('url'),
+            createCompletionItemKindMethod('nyaize'),
         ];
     }
 }, ':');
