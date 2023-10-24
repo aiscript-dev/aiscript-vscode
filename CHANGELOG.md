@@ -4,6 +4,9 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.5 (Unreleased)
+- (add) `Mk:nyaize`のIntellisenseを追加
+
 ## 0.0.4
 - (fix) Intellisenseの実装漏れ（`Core:`標準関数）
 - (fix) `<:`のシンタックスハイライトがない
