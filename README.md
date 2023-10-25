@@ -6,6 +6,10 @@
 
 AiScript Highlighting is an extension for Visual Studio Code that provides syntax highlighting for AiScript.
 
+- Syntax highlighting for AiScript ~~that just works~~
+- Intellisense for all AiScript features, not just a snippet
+  - (Comes with Misskey-related properties!)
+
 ## How to Install
 
 Head to the [releases page](https://github.com/misskey-dev/aiscript-vscode/releases) and download the latest version of the `.vsix` file.
