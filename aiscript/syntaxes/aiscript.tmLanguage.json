@@ -19,10 +19,10 @@
 					"include": "#strings"
 				},
 				{
-					"include": "#declarations"
+					"include": "#template-strings"
 				},
 				{
-					"include": "#template-strings"
+					"include": "#declarations"
 				},
 				{
 					"include": "#numbers"
@@ -152,7 +152,7 @@
 							"name": "string.other.aiscript"
 						}
 					},
-					"end": "`(?![\\s]*`)",
+					"end": "`",
 					"endCaptures": {
 						"0": {
 							"name": "string.other.aiscript"
@@ -185,7 +185,7 @@
 						},
 						{
 							"name": "string.other.aiscript",
-							"match": "[^`]?"
+							"match": "[^`{]+"
 						}
 					]
 				}
