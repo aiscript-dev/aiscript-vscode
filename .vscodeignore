@@ -1,5 +1,8 @@
 .vscode/**
 .vscode-test/**
 readme-assets/**
+aiscript/**
+node_modules/**
 .gitignore
+*.vsix
 vsc-extension-quickstart.md

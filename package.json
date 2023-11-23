@@ -19,7 +19,10 @@
     "onLanguage:aiscript"
   ],
   "scripts": {
-    "vscode:prepublish": "npm run build",
+    "vscode:prepublish": "npm run esbuild-base -- --minify",
+    "esbuild-base": "esbuild ./aiscript/intellisense/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
     "build": "tsc -p ./",
     "watch": "tsc -watch -p ./"
   },
@@ -48,6 +51,7 @@
   "devDependencies": {
     "@types/node": "^20.8.7",
     "@types/vscode": "^1.83.1",
+    "esbuild": "^0.19.7",
     "typescript": "^5.2.2"
   },
   "dependencies": {

@@ -6,6 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 0.1.0
 - (add) Language Serverを統合（文法チェックが利用できるように）
+- (enhance) バンドラとしてesbuildを使用するように
 - (change) パッケージマネージャがnpmに変更されました
 
 ## 0.0.6
