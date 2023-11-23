@@ -29,10 +29,10 @@ Please refer to CHANGELOG.md
 Run:
 
 ```bash
-$ pnpm i
+$ npm i
 
-$ pnpm dlx vsce package
+$ npx vsce package
 
 # (If command above didn't work, try below)
-$ pnpm install -g vsce
+$ npm install -g vsce
 ```

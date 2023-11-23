@@ -4,6 +4,10 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.0
+- (add) Language Serverを統合（文法チェックが利用できるように）
+- (change) パッケージマネージャがnpmに変更されました
+
 ## 0.0.6
 - (add) `Mk:nyaize`のIntellisenseを追加
 - (fix) 複数行にわたるテンプレート文字列のハイライトに失敗する問題を修正
