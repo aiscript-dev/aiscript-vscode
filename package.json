@@ -1,53 +1,57 @@
 {
-	"name": "aiscript-vscode",
-	"publisher": "aiscript-dev",
-	"displayName": "AiScript Highlighting",
-	"description": "Add support for AiScript",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/aiscript-dev/aiscript-vscode"
-	},
-	"version": "0.1.0",
-	"engines": {
-		"vscode": "^1.83.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"main": "./dist/extension.js",
-	"activationEvents": [
-		"onLanguage:aiscript"
-	],
-	"scripts": {
-		"vscode:prepublish": "npm run build",
-		"build": "tsc -p ./",
-		"watch": "tsc -watch -p ./"
-	},
-	"contributes": {
-		"languages": [
-			{
-				"id": "aiscript",
-				"aliases": [
-					"AiScript",
-					"aiscript"
-				],
-				"extensions": [
-					".is"
-				],
-				"configuration": "./aiscript/language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "aiscript",
-				"scopeName": "source.aiscript",
-				"path": "./aiscript/syntaxes/aiscript.tmLanguage.json"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/node": "^20.8.7",
-		"@types/vscode": "^1.83.1",
-		"typescript": "^5.2.2"
-	}
+  "name": "aiscript-vscode",
+  "publisher": "aiscript-dev",
+  "displayName": "AiScript Highlighting",
+  "description": "Add support for AiScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiscript-dev/aiscript-vscode"
+  },
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onLanguage:aiscript"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "aiscript",
+        "aliases": [
+          "AiScript",
+          "aiscript"
+        ],
+        "extensions": [
+          ".is"
+        ],
+        "configuration": "./aiscript/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aiscript",
+        "scopeName": "source.aiscript",
+        "path": "./aiscript/syntaxes/aiscript.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@types/vscode": "^1.83.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@aiscript-dev/aiscript-languageserver": "https://github.com/aiscript-dev/aiscript-languageserver/releases/download/0.1.5/aiscript-dev-aiscript-languageserver-0.1.5.tgz",
+    "vscode-languageclient": "^9.0.1"
+  }
 }
