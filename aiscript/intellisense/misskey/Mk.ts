@@ -19,7 +19,6 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('dialog'),
             createCompletionItemKindMethod('confirm'),
             createCompletionItemKindMethod('api'),
-            createCompletionItemKindMethod('apiExternal'),
             createCompletionItemKindMethod('save'),
             createCompletionItemKindMethod('load'),
             createCompletionItemKindMethod('url'),
