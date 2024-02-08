@@ -4,6 +4,12 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.2
+- (change) tmLanguageの言語名設定を変更 (https://github.com/misskey-dev/misskey/issues/13204)
+
+## 0.1.1
+- (change) セキュリティ上の懸念があるAiScript関数に対しての入力補助機能を削除
+
 ## 0.1.0
 - (add) Language Serverを統合（文法チェックが利用できるように）
 - (enhance) バンドラとしてesbuildを使用するように

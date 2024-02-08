@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/aiscript-dev/aiscript-vscode"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.83.0"
   },
@@ -35,7 +35,8 @@
           "aiscript"
         ],
         "extensions": [
-          ".is"
+          ".is",
+          ".ais"
         ],
         "configuration": "./aiscript/language-configuration.json"
       }
