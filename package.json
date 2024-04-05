@@ -19,12 +19,13 @@
     "onLanguage:aiscript"
   ],
   "scripts": {
-    "vscode:prepublish": "npm run esbuild-base -- --minify",
+    "vscode:prepublish": "npm run clean && npm run esbuild-base -- --minify",
     "esbuild-base": "esbuild ./aiscript/intellisense/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
-    "esbuild": "npm run esbuild-base -- --sourcemap",
-    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
-    "build": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "esbuild": "npm run clean && npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run clean && npm run esbuild-base -- --sourcemap --watch",
+    "build": "npm run clean && tsc -p ./",
+    "watch": "npm run clean && tsc -watch -p ./",
+    "clean": "node ./scripts/clean.js"
   },
   "contributes": {
     "languages": [
