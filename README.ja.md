@@ -6,7 +6,7 @@
 
 **AiScript VSCode 拡張機能** は、AiScriptのシンタックスハイライティングなどを提供するVisual Studio Code向けの拡張機能です。
 
-- フツーに動くVSCode向けのAiScriptシンタックスハイライト
+- フツーに動く、VSCode向けのAiScriptシンタックスハイライト
 - 単なるスニペットではなくIntellisense（VSCodeの予測変換機能）としてAiScriptの全機能を網羅
   - （Misskey関連のプロパティにも対応！）
 
