@@ -4,6 +4,15 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.4
+- (fix) 依存関係を修正
+
+## 0.1.3
+- (change) AiScript Language Serverを更新  
+  （このプログラムをパッケージとしてインストールした際にbinが存在しないというWARNが出てしまう問題を修正できるかも）
+
+※拡張機能自体に更新はありません
+
 ## 0.1.2
 - (change) tmLanguageの言語名設定を変更 (https://github.com/misskey-dev/misskey/issues/13204)
 
