@@ -56,7 +56,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@aiscript-dev/aiscript-languageserver": "https://github.com/aiscript-dev/aiscript-languageserver/releases/download/0.1.5/aiscript-dev-aiscript-languageserver-0.1.5.tgz",
+    "@aiscript-dev/aiscript-languageserver": "https://github.com/aiscript-dev/aiscript-languageserver/archive/refs/tags/0.1.6.tar.gz",
     "vscode-languageclient": "^9.0.1"
   }
 }
