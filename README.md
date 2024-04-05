@@ -1,5 +1,7 @@
 # AiScript Highlighting VSCode Extension (Experimental)
 
+[日本語](https://github.com/aiscript-dev/aiscript-vscode/blob/main/README.ja.md)
+
 ![Screenshot](./readme-assets/screenshot.png)
 
 ## Features
@@ -29,10 +31,13 @@ Please refer to CHANGELOG.md
 Run:
 
 ```bash
+# Install dependencies
 $ npm i
 
+# Pack into .vsix file using VSCE
 $ npx vsce package
 
 # (If command above didn't work, try below)
 $ npm install -g vsce
+$ vsce package
 ```
