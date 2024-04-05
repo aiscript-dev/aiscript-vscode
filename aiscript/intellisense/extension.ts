@@ -13,6 +13,7 @@ import AisMath from "./functions/Math";
 import AisNum from "./functions/Num";
 import AisStr from "./functions/Str";
 import AisObj from "./functions/Obj";
+import AisArr from "./functions/Arr";
 import AisError from "./functions/Error";
 import AisAsync from "./functions/Async";
 import MiTopLevel from "./misskey/TopLevel";
@@ -37,6 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
     AisNum,
     AisStr,
     AisObj,
+    AisArr,
     AisError,
     AisAsync,
 

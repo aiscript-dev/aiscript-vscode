@@ -23,6 +23,7 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('hour'),
             createCompletionItemKindMethod('minute'),
             createCompletionItemKindMethod('second'),
+            createCompletionItemKindMethod('millisecond'),
             createCompletionItemKindMethod('parse'),
         ];
     }

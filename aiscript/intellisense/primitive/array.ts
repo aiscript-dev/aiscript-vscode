@@ -25,6 +25,8 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('reverse'),
             createCompletionItemKindMethod('copy'),
             createCompletionItemKindMethod('sort'),
+            createCompletionItemKindMethod('fill'),
+            createCompletionItemKindMethod('repeat'),
         ];
     }
 }, '.');
