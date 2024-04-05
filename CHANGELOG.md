@@ -4,8 +4,13 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.6
+- 関数のIntellisenseを追加
+  - https://github.com/aiscript-dev/aiscript/pull/411 … `[].index_of()`
+  - https://github.com/aiscript-dev/aiscript/pull/372 … `Core:abort()`
+  - https://github.com/aiscript-dev/aiscript/pull/486 … 文字列に関する関数 複数
+
 ## 0.1.5
-## What's changed
 - 関数のIntellisenseを追加
   - https://github.com/aiscript-dev/aiscript/pull/552 … `Date:millisecond()`
   - https://github.com/aiscript-dev/aiscript/pull/581 … `[].fill()`, `[].repeat()`, `Arr:create()`
