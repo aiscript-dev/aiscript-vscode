@@ -22,6 +22,13 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('upper'),
             createCompletionItemKindMethod('lower'),
             createCompletionItemKindMethod('codepoint_at'),
+            createCompletionItemKindMethod('charcode_at'),
+            createCompletionItemKindMethod('to_arr'),
+            createCompletionItemKindMethod('to_unicode_arr'),
+            createCompletionItemKindMethod('to_unicode_codepoint_arr'),
+            createCompletionItemKindMethod('to_char_arr'),
+            createCompletionItemKindMethod('to_charcode_arr'),
+            createCompletionItemKindMethod('to_utf8_byte_arr'),
         ];
     }
 }, '.');

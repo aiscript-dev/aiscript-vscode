@@ -33,6 +33,7 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('type'),
             createCompletionItemKindMethod('to_str'),
             createCompletionItemKindMethod('sleep'),
+            createCompletionItemKindMethod('abort'),
         ];
     }
 }, ':');

@@ -21,6 +21,8 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('lt'),
             createCompletionItemKindMethod('gt'),
             createCompletionItemKindMethod('from_codepoint'),
+            createCompletionItemKindMethod('from_unicode_codepoints'),
+            createCompletionItemKindMethod('from_utf8_bytes'),
         ];
     }
 }, ':');
