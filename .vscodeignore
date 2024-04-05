@@ -1,7 +1,7 @@
 .vscode/**
 .vscode-test/**
 readme-assets/**
-aiscript/**
+aiscript/intellisense/**
 node_modules/**
 .gitignore
 *.vsix
