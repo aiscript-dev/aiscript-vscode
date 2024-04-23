@@ -25,6 +25,7 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('second'),
             createCompletionItemKindMethod('millisecond'),
             createCompletionItemKindMethod('parse'),
+            createCompletionItemKindMethod('to_iso_str'),
         ];
     }
 }, ':');

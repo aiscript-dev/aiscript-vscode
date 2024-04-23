@@ -28,6 +28,8 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('fill'),
             createCompletionItemKindMethod('repeat'),
             createCompletionItemKindMethod('index_of'),
+            createCompletionItemKindMethod('every'),
+            createCompletionItemKindMethod('some'),
         ];
     }
 }, '.');
