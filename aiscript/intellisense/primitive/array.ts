@@ -33,6 +33,8 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('splice'),
             createCompletionItemKindMethod('flat'),
             createCompletionItemKindMethod('flat_map'),
+            createCompletionItemKindMethod('insert'),
+            createCompletionItemKindMethod('remove'),
         ];
     }
 }, '.');
