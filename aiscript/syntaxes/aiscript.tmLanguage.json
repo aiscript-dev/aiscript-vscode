@@ -58,7 +58,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.aiscript",
-					"match": "(return|<:|if|elif|else|for|eval|loop|match)(?=[\\s(])"
+					"match": "(return|<:|if|elif|else|for|each|eval|loop|match)(?=[\\s(])"
 				}
 			]
 		},
