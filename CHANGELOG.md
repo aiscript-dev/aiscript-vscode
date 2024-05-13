@@ -4,6 +4,9 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.9
+- `each`文が正しくhighlightされない問題を修正（#11）
+
 ## 0.1.8
 - 関数のIntellisenseを追加
   - https://github.com/aiscript-dev/aiscript/pull/621 - `[].splice()`
