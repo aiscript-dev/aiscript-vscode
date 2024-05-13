@@ -30,6 +30,9 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('index_of'),
             createCompletionItemKindMethod('every'),
             createCompletionItemKindMethod('some'),
+            createCompletionItemKindMethod('splice'),
+            createCompletionItemKindMethod('flat'),
+            createCompletionItemKindMethod('flat_map'),
         ];
     }
 }, '.');

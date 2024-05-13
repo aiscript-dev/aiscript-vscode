@@ -29,6 +29,10 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('to_char_arr'),
             createCompletionItemKindMethod('to_charcode_arr'),
             createCompletionItemKindMethod('to_utf8_byte_arr'),
+            createCompletionItemKindMethod('pad_start'),
+            createCompletionItemKindMethod('pad_end'),
+            createCompletionItemKindMethod('starts_with'),
+            createCompletionItemKindMethod('ends_with'),
         ];
     }
 }, '.');

@@ -14,6 +14,7 @@ import AisNum from "./functions/Num";
 import AisStr from "./functions/Str";
 import AisObj from "./functions/Obj";
 import AisArr from "./functions/Arr";
+import AisUri from "./functions/Uri";
 import AisError from "./functions/Error";
 import AisAsync from "./functions/Async";
 import MiTopLevel from "./misskey/TopLevel";
@@ -39,6 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
     AisStr,
     AisObj,
     AisArr,
+    AisUri,
     AisError,
     AisAsync,
 
