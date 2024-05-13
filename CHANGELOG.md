@@ -4,6 +4,14 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.8
+- 関数のIntellisenseを追加
+  - https://github.com/aiscript-dev/aiscript/pull/621 - `[].splice()`
+  - https://github.com/aiscript-dev/aiscript/pull/622 - `[].flat()`, `[].flat_map()`
+  - https://github.com/aiscript-dev/aiscript/pull/654 - `[].insert()`, `[].remove()`
+  - https://github.com/aiscript-dev/aiscript/pull/608 - `Uri:` 系
+  - https://github.com/aiscript-dev/aiscript/pull/653 - `''.pad_start()`, `''.pad_end()`
+
 ## 0.1.7
 - 関数のIntellisenseを追加
   - https://github.com/aiscript-dev/aiscript/pull/620 - `[].every()`, `[].some()`
