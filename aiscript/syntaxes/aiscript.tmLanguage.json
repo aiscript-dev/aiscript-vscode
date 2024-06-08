@@ -4,7 +4,8 @@
 	"displayName": "AiScript",
 	"aliases": [
 		"is",
-		"ais"
+		"ais",
+		"AiScript"
 	],
 	"patterns": [
 		{
