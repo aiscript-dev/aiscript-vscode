@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/aiscript-dev/aiscript-vscode"
   },
-  "version": "0.1.9",
+  "version": "0.1.10",
   "engines": {
     "vscode": "^1.83.0"
   },
@@ -51,10 +51,10 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^20.12.4",
+    "@types/node": "^20.14.9",
     "@types/vscode": "^1.83.0",
-    "esbuild": "^0.20.2",
-    "typescript": "^5.4.4"
+    "esbuild": "^0.21.5",
+    "typescript": "^5.5.2"
   },
   "dependencies": {
     "@aiscript-dev/aiscript-languageserver": "https://github.com/aiscript-dev/aiscript-languageserver/releases/download/0.1.6/aiscript-dev-aiscript-languageserver-0.1.6.tgz",
