@@ -50,7 +50,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.aiscript",
-					"match": "(@|var|let|true|false|null|exists)|(^#{3}(?=\\s*\\{))"
+					"match": "(@|true|false|null|exists)|(^#{3}(?= +\\{))|((var|let)(?= +))"
 				}
 			]
 		},
