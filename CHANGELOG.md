@@ -4,6 +4,9 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.10
+- tmLanguageの言語指定の後方互換性を追加
+
 ## 0.1.9
 - `each`文が正しくhighlightされない問題を修正（#11）
 
