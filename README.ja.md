@@ -33,9 +33,9 @@ CHANGELOG.md をご覧ください
 $ npm i
 
 # VSCEを使いvsixパッケージ化
-$ npx vsce package
+$ npx @vscode/vsce package
 
 # もしnpxでうまくいかなければ、以下をお試しください：
-$ npm install -g vsce
+$ npm install -g @vscode/vsce
 $ vsce package
 ```

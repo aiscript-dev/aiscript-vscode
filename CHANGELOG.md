@@ -4,6 +4,10 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.12
+- 関数のIntellisenseを追加
+  - https://github.com/aiscript-dev/aiscript/pull/661 - `[].at()`
+
 ## 0.1.11
 - 変数名に`let`や`var`などが含まれるときにハイライトに失敗する問題を修正
 

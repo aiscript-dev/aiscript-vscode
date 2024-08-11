@@ -35,6 +35,7 @@ export default languages.registerCompletionItemProvider('aiscript', {
             createCompletionItemKindMethod('flat_map'),
             createCompletionItemKindMethod('insert'),
             createCompletionItemKindMethod('remove'),
+            createCompletionItemKindMethod('at'),
         ];
     }
 }, '.');
