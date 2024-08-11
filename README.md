@@ -35,9 +35,9 @@ Run:
 $ npm i
 
 # Pack into .vsix file using VSCE
-$ npx vsce package
+$ npx @vscode/vsce package
 
 # (If command above didn't work, try below)
-$ npm install -g vsce
+$ npm install -g @vscode/vsce
 $ vsce package
 ```
