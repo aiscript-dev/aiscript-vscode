@@ -3,6 +3,7 @@
 readme-assets/**
 aiscript/intellisense/**
 node_modules/**
+scripts/**
 .gitignore
 *.vsix
 vsc-extension-quickstart.md
