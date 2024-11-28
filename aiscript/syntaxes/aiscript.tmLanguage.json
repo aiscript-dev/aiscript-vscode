@@ -10,6 +10,9 @@
 	"patterns": [
 		{
 			"include": "#syntax"
+		},
+		{
+			"include": "#template-strings"
 		}
 	],
 	"repository": {
@@ -23,9 +26,6 @@
 				},
 				{
 					"include": "#strings"
-				},
-				{
-					"include": "#template-strings"
 				},
 				{
 					"include": "#declarations"
@@ -131,7 +131,7 @@
 					"patterns": [
 						{
 							"name": "constant.character.escape.aiscript",
-							"match": "\\\\."
+							"match": "\\\\['\"\\\\]"
 						}
 					]
 				},
@@ -142,7 +142,7 @@
 					"patterns": [
 						{
 							"name": "constant.character.escape.aiscript",
-							"match": "\\\\."
+							"match": "\\\\['\"\\\\]"
 						}
 					]
 				}
@@ -166,14 +166,18 @@
 					},
 					"patterns": [
 						{
+							"name": "constant.character.escape.aiscript",
+							"match": "\\\\['\"`\\\\{}]"
+						},
+						{
 							"name": "meta.string-template.aiscript",
-							"begin": "{",
+							"begin": "\\{",
 							"beginCaptures": {
 								"0": {
 									"name": "entity.name.tag.aiscript"
 								}
 							},
-							"end": "}",
+							"end": "\\}",
 							"endCaptures": {
 								"0": {
 									"name": "entity.name.tag.aiscript"
@@ -184,10 +188,6 @@
 									"include": "#syntax"
 								}
 							]
-						},
-						{
-							"name": "constant.character.escape.aiscript",
-							"match": "\\\\."
 						},
 						{
 							"name": "string.other.aiscript",
