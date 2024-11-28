@@ -3,6 +3,7 @@
   "publisher": "aiscript-dev",
   "displayName": "AiScript Highlighting",
   "description": "Add support for AiScript",
+  "icon": "./assets/aiscript_gd.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/aiscript-dev/aiscript-vscode"
@@ -39,6 +40,10 @@
           ".is",
           ".ais"
         ],
+        "icon": {
+          "light": "./assets/aiscript_gd.png",
+          "dark": "./assets/aiscript_gd.png"
+        },
         "configuration": "./aiscript/language-configuration.json"
       }
     ],
