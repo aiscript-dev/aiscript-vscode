@@ -9,6 +9,9 @@
 	],
 	"patterns": [
 		{
+			"include": "#namespace"
+		},
+		{
 			"include": "#syntax"
 		},
 		{
@@ -72,6 +75,22 @@
 				{
 					"name": "punctuation.accessor.aiscript",
 					"match": "(:|\\.)"
+				}
+			]
+		},
+		"namespace": {
+			"patterns": [
+				{
+					"name": "meta.namespaceblock.aiscript",
+					"match": "^(:{2})\\s?([a-zA-Z0-9_]+)\\s?\\{",
+					"captures": {
+						"1": {
+							"name": "storage.type.aiscript"
+						},
+						"2": {
+							"name": "entity.name.class.aiscript"
+						}
+					}
 				}
 			]
 		},
