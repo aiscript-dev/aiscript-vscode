@@ -6,6 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 0.1.13
 - AiScriptロゴを追加
+- 名前空間ブロックのハイライトに対応
 - テンプレートリテラル内の波括弧のエスケープが効いていない問題を修正
 
 ## 0.1.12
