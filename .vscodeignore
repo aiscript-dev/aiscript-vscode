@@ -7,3 +7,4 @@ scripts/**
 .gitignore
 *.vsix
 vsc-extension-quickstart.md
+tsconfig.json
