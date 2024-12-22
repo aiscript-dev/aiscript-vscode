@@ -135,6 +135,9 @@
 					"patterns": [
 						{
 							"include": "#syntax"
+						},
+						{
+							"include": "#template-strings"
 						}
 					],
 					"end": "\\)"
