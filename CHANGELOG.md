@@ -4,6 +4,10 @@ All notable changes to the "aiscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.14
+- 依存パッケージを更新
+- 関数の引数にテンプレート文字列を取るとハイライトされない問題を修正
+
 ## 0.1.13
 - AiScriptロゴを追加
 - 名前空間ブロックのハイライトに対応
