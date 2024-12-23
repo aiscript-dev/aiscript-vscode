@@ -1,15 +1,7 @@
 {
-	"compilerOptions": {
-		"module": "Node16",
-		"target": "es2020",
-		"lib": ["es2020"],
-		"outDir": "dist",
-		"sourceMap": true,
-		"strict": true,
-		"rootDir": "aiscript/intellisense"
-	},
-	"exclude": [
-		"node_modules",
-		".vscode-test"
-	]
+    "files": [],
+    "references": [
+        { "path": "./tsconfig.buildconfig.json" },
+        { "path": "./tsconfig.extension.json" }
+    ]
 }
