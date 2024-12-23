@@ -20,13 +20,8 @@
     "onLanguage:aiscript"
   ],
   "scripts": {
-    "vscode:prepublish": "npm run clean && npm run esbuild-base -- --minify",
-    "esbuild-base": "esbuild ./aiscript/intellisense/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
-    "esbuild": "npm run clean && npm run esbuild-base -- --sourcemap",
-    "esbuild-watch": "npm run clean && npm run esbuild-base -- --sourcemap --watch",
-    "build": "npm run clean && tsc -p ./",
-    "watch": "npm run clean && tsc -watch -p ./",
-    "clean": "node ./scripts/clean.js"
+    "vscode:prepublish": "npm run build",
+    "build": "tsup"
   },
   "contributes": {
     "languages": [
@@ -56,13 +51,13 @@
     ]
   },
   "devDependencies": {
+    "@aiscript-dev/aiscript-languageserver": "https://github.com/aiscript-dev/aiscript-languageserver/releases/download/0.1.6/aiscript-dev-aiscript-languageserver-0.1.6.tgz",
     "@types/node": "^22.10.2",
     "@types/vscode": "^1.83.0",
-    "esbuild": "^0.24.2",
-    "typescript": "^5.7.2"
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vscode-languageclient": "^9.0.1"
   },
   "dependencies": {
-    "@aiscript-dev/aiscript-languageserver": "https://github.com/aiscript-dev/aiscript-languageserver/releases/download/0.1.6/aiscript-dev-aiscript-languageserver-0.1.6.tgz",
-    "vscode-languageclient": "^9.0.1"
   }
 }
